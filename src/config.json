@@ -1,0 +1,23 @@
+{
+    "name": "swoole/socket",
+    "description": "Redefine PHP",
+    "type": "socket-framework",
+    "apps":
+	{
+		"test" : {
+			"host" : "120.24.52.9",
+			"port" : "9508",
+			"directory" : "/opt/website/swoole/src/app/test/TestServer.php"
+		},
+		"watch" : {
+			"host" : "120.24.52.9",
+			"port" : "9518",
+			"directory" : "/opt/website/swoole/src/app/watch/WatchServer.php"
+		},
+		"print" : {
+			"host" : "120.24.52.9",
+			"port" : "9528",
+			"directory" : "/opt/website/swoole/src/app/print/PrintServer.php"
+		}
+	}
+}
