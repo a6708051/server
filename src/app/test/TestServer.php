@@ -40,6 +40,6 @@ class TestServer extends server\support\Socket
         parent::start();
     }
 }
-//
-//$obj = new WatchServer();
-//$obj->start();
+
+$obj = new TestServer();
+$obj->start();
