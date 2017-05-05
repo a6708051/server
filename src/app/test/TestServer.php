@@ -22,13 +22,13 @@ class TestServer extends server\support\Socket
     public static function onConnect($socket_server, $fd, $from_id)
     {
         echo "Client:Connect.\n";
-        header("location:www.baidu.com");
-        exit;
         $socket_server->send($fd, 'welcome to here');
     }
 
     public static function onReceive($socket_server, $fd, $from_id, $data)
     {
+        header("location:www.baidu.com");
+        exit;
         $socket_server->send($fd, 'Server: '.$data);
     }
 
