@@ -11,7 +11,7 @@ class TestServer extends server\support\Socket
         'host'=>'0.0.0.0',
         'port'=>9999,
         'worker_num'=>4,    //工作进程数量
-        'daemonize'=>true,  //是否作为守护进程
+//        'daemonize'=>true,  //是否作为守护进程
     );
     public function __construct($config_params = array())
     {
