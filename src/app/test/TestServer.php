@@ -24,6 +24,7 @@ class TestServer extends server\support\Socket
         echo "Client:Connect.\n";
         $data = file_get_contents('https://www.baidu.com');
         $socket_server->send($fd, $data);
+        $socket_server->close();
 //        $socket_server->send($fd, 'welcome to here');
     }
 
