@@ -22,7 +22,8 @@ class TestServer extends server\support\Socket
     public static function onConnect($socket_server, $fd, $from_id)
     {
         echo "Client:Connect.\n";
-        $data = file_get_contents('https://www.baidu.com');
+
+        $data = server\lib\Functions::doCurlPostRequest('www.lieshow.com');
         $socket_server->send($fd, $data);
         $socket_server->close($fd);
 //        $socket_server->send($fd, 'welcome to here');
